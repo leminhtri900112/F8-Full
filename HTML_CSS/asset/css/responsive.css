@@ -1,0 +1,144 @@
+/* Mobide and tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        height: 68px;
+    }
+
+    .header__sort-bar {
+        display: flex;
+    }
+
+    .header__with-search {
+        height: 68px;
+    }
+
+    .container {
+        padding-top: 124px;
+    }
+
+    .mobile-category {
+        display: block;
+    }
+
+    .header__logo-img {
+        width: 124px;
+    }
+
+    .header__cart-product::after {
+        top: calc(-6% + 2px);
+        right: 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header__search {
+        position: fixed;
+        top: 68px;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        padding: 0 10px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+        height: 46px;
+        animation: mobileSearchSidein linear 0.3s ;
+        display: none;
+    }
+
+    .header__search-checkbox:checked ~ .header__search {
+        display: flex;
+    }
+
+    @keyframes mobileSearchSidein {
+        from {
+            opacity: 0;
+            top: 34px;
+        }
+        to {
+            opacity: 1;
+            top: 68px;
+        }
+    }
+    .header__with-search {
+        justify-content: space-between;
+    }
+    .header__logo,
+    .header__cart {
+        width: unset;
+    }
+
+    .header__mobile-search {
+        display: block;
+    }
+    .header__cart-wrap {
+        margin: 0 30px;
+    }
+
+    .header__search-history {
+        position: fixed;
+        width: 100%;
+        top: 114px;
+        left: 0;
+        right: 0;
+        padding: 0 12px;
+    }
+
+    .pagination-margin {
+        padding: 0;
+    }
+
+    .pagination-item  {
+        margin: 0;
+    }
+
+    .pagination-item__link {
+        min-width: 36px;
+        font-size: 1.6rem;
+    }
+
+    .footer-copyrigh {
+        padding: 0 10px;
+    }
+
+    .footer__heading {
+        line-height: 2.4rem;
+
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    /* CSS header */
+
+
+    .header__cart {
+        width: 90px;
+    }
+
+    .header__cart-wrap {
+        margin: 0;
+        margin-right: 10px;
+        text-align: right;
+    }
+
+    
+    /* CSS Container */
+
+
+}
